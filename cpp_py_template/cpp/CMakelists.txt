@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.14)
+project(math_ops_cli)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+include(FetchContent)
+FetchContent_Declare(
+    pybind11
+    GIT_REPOSITORY https://github.com/pybind/pybind11
+    GIT_TAG v2.11.1
+)
+FetchContent_MakeAvailable(pybind11)
+
+# Build the executable
+add_executable(math_ops_cli src/main.cpp src/math_ops.cpp)
+target_include_directories(math_ops_cli PRIVATE src)
+
+# Build the Python module
+pybind11_add_module(math_ops_cpp src/pybind_wrapper.cpp src/math_ops.cpp)
+target_include_directories(math_ops_cpp PRIVATE src)
