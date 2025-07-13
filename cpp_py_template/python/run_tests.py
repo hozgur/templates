@@ -6,7 +6,7 @@ import unittest
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 # Import the test module
-from test_math_ops import TestMathOps
+from cpp_py_template.python.test import TestMathOps
 
 if __name__ == '__main__':
     unittest.main(argv=['run_tests.py', '-v']) 

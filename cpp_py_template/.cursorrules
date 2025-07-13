@@ -1,0 +1,25 @@
+{
+    "shell": "powershell",
+    "formatOnSave": true,
+    "defaultFormatter": {
+        "cpp": "clang-format",
+        "hpp": "clang-format",
+        "python": "black"
+    },
+    "lintOnSave": true,
+    "defaultLinter": {
+        "cpp": "clang-tidy",
+        "hpp": "clang-tidy",
+        "python": "flake8"
+    },
+    "buildCommand": "python setup.py build",
+    "testCommand": "python -m pytest python/test.py",
+    "searchExclude": [
+        "**/build/**",
+        "**/dist/**",
+        "**/__pycache__/**",
+        "**/*.egg-info/**",
+        "**/test_output/**",
+        "**/.git/**"
+    ]
+} 
