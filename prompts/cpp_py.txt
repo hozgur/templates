@@ -1,34 +1,5 @@
-# C++ Python Binding Project Template
-
-## Project Configuration
-Project Name: <PROJECT_NAME>
-// This will be used for package naming and file naming.
-
-## C++ Functions to Wrap
-List your C++ functions below in the following format:
-- Function Name: <FUNCTION_NAME>
-- Return Type: <RETURN_TYPE>
-- Parameters: <PARAM_TYPE1> <PARAM_NAME1>, <PARAM_TYPE2> <PARAM_NAME2>, ...
-- Brief Description: <WHAT_THE_FUNCTION_DOES>
-
-Example:
-- Function Name: add_numbers
-- Return Type: double
-- Parameters: double a, double b
-- Brief Description: Adds two double precision numbers
-
-## Build Requirements (Optional)
-- Minimum C++ Version: <CPP_VERSION> (e.g., C++11, C++14, etc.)
-- Additional C++ Dependencies: <LIST_DEPENDENCIES>
-- Python Version: <PYTHON_VERSION>
-- Additional Python Dependencies: <LIST_DEPENDENCIES>
-
-## Template Source
-This project will be created using the template from: https://github.com/hozgur/templates/cpp_py_template
-
-The following will be automatically updated:
-1. Source file names and namespaces
-2. CMakeLists.txt configuration
-3. Python package setup files (setup.py, requirements.txt, pyproject.toml)
-4. Documentation files (README.md, DEVELOPMENT.md)
-5. Test files
+Create a project using the template from: https://github.com/hozgur/templates repo in cpp_py_template folder
+Set Project Name: <PROJECT_NAME>
+define a cpp function and wrap this function with <function_name> 
+update all source, Documentation, Setup, Test etc... files.
+and last: build and test from python. Use powershell for shell commands.
